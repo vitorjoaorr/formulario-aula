@@ -1,85 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula formulário</title>
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <form method="post">
-        <label for="dia">Dia</label><br>
-        <select name="dia" id="dia">
+    <h1>Formulário</h1>
+
+    <form action="index.html" method="get" enctype="multipart/form-data">
+
+        <input type="text" name="nome" id="nome" placeholder="Nome" required>
+
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+        <br>
+
+        <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Celular ou email" required>
+        <br>
+
+        <input type="password" name="senha" id="senha" placeholder="Nova senha" required>
+        <br>
+
+        <select name="dia" id="dia" required>
             <option value="01">01</option>
             <option value="02">02</option>
             <option value="03">03</option>
             <option value="04">04</option>
             <option value="05">05</option>
             <option value="06">06</option>
-            <option value="07">07</option>
-            <option value="08">08</option>
-            <option value="09">09</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-            <option value="25">25</option>
-            <option value="26">26</option>
-            <option value="27">27</option>
-            <option value="28">28</option>
-            <option value="29">29</option>
-            <option value="30">30</option>
-            <option value="31">31</option>
-        </select><br><br>
+        </select>
 
-        <label for="mes">Mês</label><br>
-        <select name="mes" id="mes">
-            <option value="jan">jan</option>
-            <option value="fev">fev</option>
-            <option value="mar">mar</option>
-            <option value="abr">abr</option>
-            <option value="mai">mai</option>
-            <option value="jun">jun</option>
-            <option value="jul">jul</option>
-            <option value="agr">ago</option>
-            <option value="set">set</option>
-            <option value="out">out</option>
-            <option value="nov">nov</option>
-            <option value="dez">dez</option>
-        </select><br><br>
+        <select name="mes" id="mes" required>
+            <option value="jan">Jan</option>
+            <option value="fev">Fev</option>
+            <option value="mar">Mar</option>
+            <option value="abr">Abr</option>
+            <option value="mai">Mai</option>
+            <option value="jun">Jun</option>
+        </select>
 
-        <label for="ano">Ano</label><br>
-        <select name="ano" id="ano">
+        <select name="ano" id="ano" required>
             <option value="2000">2000</option>
             <option value="2001">2001</option>
             <option value="2002">2002</option>
             <option value="2003">2003</option>
             <option value="2004">2004</option>
             <option value="2005">2005</option>
-            <option value="2006">2006</option>
-            <option value="2007">2007</option>
-            <option value="2008">2008</option>
-            <option value="2009">2009</option>
-            <option value="2010">2010</option>
-            <option value="2011">2011</option>
-            <option value="2012">2012</option>
-            <option value="2013">2013</option>
-            <option value="2014">2014</option>
-            <option value="2015">2015</option>
-        </select>
+        </select><br><br><br>
 
+        <label>Genero</label><br><br>
 
-        
+        <input type="radio" name="genero" id="feminino" value="feminino" required>
+        <label for="feminino">Feminino</label>
+
+        <input type="radio" name="genero" id="masculino" value="masculino" required>
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" name="genero" id="personalizado" value="personalizado" required>
+        <label for="personalizado">Personalizado</label>
+        <br>
+        <br>
+
+        <input type="file">
+        <br>
+        <br>
+
+        <input type="submit" value="enviar">
     </form>
+
 </body>
+
 </html>
